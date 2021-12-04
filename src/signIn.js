@@ -8,16 +8,16 @@ import axios from 'axios';
 function signIn() {
   const [inputs, setInputs] = useState({});
 
-  useEffect(() => {
-    let body = {
-      email:"yasmeen@gmail.com",
-      password:"yasmeen"
-    }
-      axios.post('http://localhost:5000/signin', body || {}).then((data)=>{
-        console.log(data);
-      })
+  // useEffect(() => {
+  //   let body = {
+  //     email:inputs.email,
+  //     password:inputs.password
+  //   }
+  //     axios.post('http://localhost:5000/signin', body || {}).then((data)=>{
+  //       console.log(data);
+  //     })
      
-    }, [])
+  //   }, [])
 
   const submit = (event) => {
     event.preventDefault();

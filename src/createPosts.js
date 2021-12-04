@@ -8,16 +8,16 @@ import axios from 'axios';
 function createPosts() {
   const [inputs, setInputs] = useState({});
 
-  useEffect(() => {
-    let body = {
-      name:"paul",
-      email:"paul@gmail.com"
-    }
-      axios.post('http://localhost:5000/create/posts', body || {}).then((data)=>{
-        console.log(data);
-      })
+  // useEffect(() => {
+  //   let body = {
+  //     name:inputs.name,
+  //     email:inputs.email
+  //   }
+  //     axios.post('http://localhost:5000/create/posts', body || {}).then((data)=>{
+  //       console.log(data);
+  //     })
      
-    }, [])
+  //   }, [])
 
   const submit = (event) => {
     event.preventDefault();
